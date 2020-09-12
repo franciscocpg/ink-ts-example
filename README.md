@@ -1,4 +1,4 @@
-# ink-ts-exampleest-ink
+# ink-ts-example
 
 A typescript example for [ink](https://github.com/vadimdemedes/ink).
 
