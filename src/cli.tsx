@@ -9,7 +9,7 @@ const cli = meow(`
 	  $ src/cli.tsx
 
 	Options
-		--name  Your name
+	  --name  Your name
 
 	Examples
 	  $ src/cli.tsx --name=Jane

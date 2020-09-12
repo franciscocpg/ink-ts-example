@@ -14,12 +14,12 @@ yarn
 $ src/cli.tsx --help
 
   Usage
-	  $ src/cli.tsx
+    $ src/cli.tsx
 
-	Options
-		--name  Your name
+  Options
+    --name  Your name
 
-	Examples
-	  $ src/cli.tsx --name=Jane
-	  Hello, Jane
+  Examples
+    $ src/cli.tsx --name=Jane
+    Hello, Jane
 ```
