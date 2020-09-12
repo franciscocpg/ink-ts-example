@@ -1,0 +1,81 @@
+{
+	"name": "test-ink",
+	"version": "0.0.0",
+	"license": "MIT",
+	"bin": "lib/cli.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "tsc --skipLibCheck --noEmit && eslint 'src/**/*'",
+		"test": "ava -v"
+	},
+	"files": [
+		"lib"
+	],
+	"devDependencies": {
+		"@ava/babel": "^1.0.1",
+		"@babel/preset-react": "^7.10.4",
+		"@babel/register": "^7.11.5",
+		"@types/meow": "^5.0.0",
+		"@types/node": "^14.10.1",
+		"@types/react": "^16.9.49",
+		"@typescript-eslint/eslint-plugin": "^4.1.0",
+		"@typescript-eslint/parser": "^4.1.0",
+		"ava": "^3.12.1",
+		"chalk": "^4.1.0",
+		"eslint": "^7.8.1",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"ink-testing-library": "^2.0.1",
+		"prettier": "^2.1.1",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.2"
+	},
+	"dependencies": {
+		"ink": "^3.0.5",
+		"meow": "^7.1.1",
+		"react": "^16.13.1"
+	},
+	"ava": {
+		"extensions": [
+			"ts",
+			"tsx"
+		],
+		"require": [
+			"ts-node/register",
+			"@babel/register"
+		],
+		"babel": {
+			"testOptions": {
+				"presets": [
+					"@babel/preset-react"
+				]
+			}
+		}
+	},
+	"eslintConfig": {
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"ecmaVersion": 2020,
+			"sourceType": "module",
+			"ecmaFeatures": {
+				"jsx": true
+			}
+		},
+		"settings": {
+			"react": {
+				"version": "detect"
+			}
+		},
+		"extends": [
+			"plugin:react/recommended",
+			"plugin:@typescript-eslint/recommended",
+			"prettier/@typescript-eslint",
+			"plugin:prettier/recommended"
+		]
+	}
+}
