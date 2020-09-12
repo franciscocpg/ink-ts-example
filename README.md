@@ -11,15 +11,15 @@ yarn
 ## CLI
 
 ```
-$ src/cli.tsx --help
+$ src/cli.ts --help
 
   Usage
-    $ src/cli.tsx
+    $ src/cli.ts
 
   Options
     --name  Your name
 
   Examples
-    $ src/cli.tsx --name=Jane
+    $ src/cli.ts --name=Jane
     Hello, Jane
 ```

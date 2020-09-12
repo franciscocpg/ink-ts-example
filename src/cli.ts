@@ -6,13 +6,13 @@ import { App } from './ui';
 
 const cli = meow(`
 	Usage
-	  $ src/cli.tsx
+	  $ src/cli.ts
 
 	Options
 	  --name  Your name
 
 	Examples
-	  $ src/cli.tsx --name=Jane
+	  $ src/cli.ts --name=Jane
 	  Hello, Jane
 `);
 
